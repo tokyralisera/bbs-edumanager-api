@@ -1,0 +1,782 @@
+[
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "validate_password",
+        "importPath": "django.contrib.auth.password_validation",
+        "description": "django.contrib.auth.password_validation",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.password_validation",
+        "documentation": {}
+    },
+    {
+        "label": "validate_password",
+        "importPath": "django.contrib.auth.password_validation",
+        "description": "django.contrib.auth.password_validation",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.password_validation",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairSerializer",
+        "importPath": "rest_framework_simplejwt.serializers",
+        "description": "rest_framework_simplejwt.serializers",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "decouple",
+        "description": "decouple",
+        "isExtraImport": true,
+        "detail": "decouple",
+        "documentation": {}
+    },
+    {
+        "label": "Csv",
+        "importPath": "decouple",
+        "description": "decouple",
+        "isExtraImport": true,
+        "detail": "decouple",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "AuthConfig",
+        "kind": 6,
+        "importPath": "auth.apps",
+        "description": "auth.apps",
+        "peekOfCode": "class AuthConfig(AppConfig):\n    name = 'auth'",
+        "detail": "auth.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "auth.serializers",
+        "description": "auth.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'email', 'first_name', 'last_name', 'role', 'is_active', 'date_joined']\n        read_only_fields = ['id', 'date_joined']\nclass RegisterSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True,required=True,validators=[validate_password],style={'input_type': 'password'})\n    password2 = serializers.CharField(write_only=True,required=True,validators=[validate_password],label=\"Confirmation du mot de passe\")\n    class Meta:\n        model = User",
+        "detail": "auth.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterSerializer",
+        "kind": 6,
+        "importPath": "auth.serializers",
+        "description": "auth.serializers",
+        "peekOfCode": "class RegisterSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True,required=True,validators=[validate_password],style={'input_type': 'password'})\n    password2 = serializers.CharField(write_only=True,required=True,validators=[validate_password],label=\"Confirmation du mot de passe\")\n    class Meta:\n        model = User\n        fields = ['email', 'password', 'password2', 'first_name', 'last_name', 'role']\n    def validate(self, attrs):\n        if attrs['password'] != attrs['password2']:\n            raise serializers.ValidationError({\n                \"password\": 'Les mots de passe ne sont pas identiques'",
+        "detail": "auth.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CustomTokenObtainPairSerializer",
+        "kind": 6,
+        "importPath": "auth.serializers",
+        "description": "auth.serializers",
+        "peekOfCode": "class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):\n    def validate(self, attrs):\n        data = super().validate(attrs)\n        #? Ajouter les infos utilisateur a la reponse\n        data['user'] = {\n            'id': str(self.user.id),\n            'email' : self.user.email,\n            'first_name' : self.user.first_name,\n            'last_name' : self.user.last_name,\n            'role' : self.user.role,",
+        "detail": "auth.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ChangePasswordSerializer",
+        "kind": 6,
+        "importPath": "auth.serializers",
+        "description": "auth.serializers",
+        "peekOfCode": "class ChangePasswordSerializer(serializers.Serializer):\n    old_password = serializers.CharField(required=True,write_only=True)\n    new_password = serializers.CharField(required=True,write_only=True,validators=[validate_password])\n    new_password2 = serializers.CharField(required=True, write_only=True)\n    def validate(self, attrs):\n        if attrs['new_password'] != attrs['new_password2']:\n            raise serializers.ValidationError({\n                \"new_password\": \"Les nouveaux mots de passe ne correspondent pas\"\n            })\n        return attrs",
+        "detail": "auth.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "auth.serializers",
+        "description": "auth.serializers",
+        "peekOfCode": "User = get_user_model()\nclass UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'email', 'first_name', 'last_name', 'role', 'is_active', 'date_joined']\n        read_only_fields = ['id', 'date_joined']\nclass RegisterSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True,required=True,validators=[validate_password],style={'input_type': 'password'})\n    password2 = serializers.CharField(write_only=True,required=True,validators=[validate_password],label=\"Confirmation du mot de passe\")\n    class Meta:",
+        "detail": "auth.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterView",
+        "kind": 6,
+        "importPath": "auth.views",
+        "description": "auth.views",
+        "peekOfCode": "class RegisterView(generics.CreateAPIView):\n    queryset = User.objects.all()\n    permission_classes = [AllowAny]\n    serializer_class = RegisterSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.save()\n        return Response({\n            'message': 'Utilisateur créé avec succes',",
+        "detail": "auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "CustomTokenObtainPairView",
+        "kind": 6,
+        "importPath": "auth.views",
+        "description": "auth.views",
+        "peekOfCode": "class CustomTokenObtainPairView(TokenObtainPairView):\n    serializer_class = CustomTokenObtainPairSerializer\n@api_view(['POST'])\n@permission_classes([IsAuthenticated])\ndef logout_view(request):\n    try:\n        refresh_token = request.data.get()\n    except Exception as error:\n        pass",
+        "detail": "auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "auth.views",
+        "description": "auth.views",
+        "peekOfCode": "def logout_view(request):\n    try:\n        refresh_token = request.data.get()\n    except Exception as error:\n        pass",
+        "detail": "auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "auth.views",
+        "description": "auth.views",
+        "peekOfCode": "User = get_user_model()\nclass RegisterView(generics.CreateAPIView):\n    queryset = User.objects.all()\n    permission_classes = [AllowAny]\n    serializer_class = RegisterSerializer\n    def create(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.save()\n        return Response({",
+        "detail": "auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.asgi",
+        "description": "bbs_edumanager_api.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "bbs_edumanager_api.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "SECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "DEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    #Third party applications",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    #Third party applications\n    'rest_framework',\n    'rest_framework_simplejwt',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "ROOT_URLCONF = 'bbs_edumanager_api.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'bbs_edumanager_api.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/6.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': config('DATABASE_NAME'),\n        'USER': config('DATABASE_USER'),\n        'PASSWORD': config('DATABASE_PASSWORD'),\n        'HOST': config('DATABASE_HOST'),",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': config('DATABASE_NAME'),\n        'USER': config('DATABASE_USER'),\n        'PASSWORD': config('DATABASE_PASSWORD'),\n        'HOST': config('DATABASE_HOST'),\n        'PORT': config('DATABASE_PORT'),\n    }\n}",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'fr-fr'\nTIME_ZONE = 'UTC+3'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/6.0/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nMEDIA_URL = 'media/'",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC+3'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/6.0/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nMEDIA_URL = 'media/'\nMEDIA_ROOT = BASE_DIR / 'media'",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/6.0/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nMEDIA_URL = 'media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/6.0/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nMEDIA_URL = 'media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nMEDIA_URL = 'media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Custom User Model\nAUTH_USER_MODEL = 'users.User'\n# REST Framework Configuration\nREST_FRAMEWORK = {",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / 'staticfiles'\nMEDIA_URL = 'media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Custom User Model\nAUTH_USER_MODEL = 'users.User'\n# REST Framework Configuration\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "MEDIA_URL = 'media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Custom User Model\nAUTH_USER_MODEL = 'users.User'\n# REST Framework Configuration\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Custom User Model\nAUTH_USER_MODEL = 'users.User'\n# REST Framework Configuration\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Custom User Model\nAUTH_USER_MODEL = 'users.User'\n# REST Framework Configuration\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        'rest_framework.permissions.IsAuthenticated',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\n# REST Framework Configuration\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        'rest_framework.permissions.IsAuthenticated',\n    ),\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    'DEFAULT_PERMISSION_CLASSES': (\n        'rest_framework.permissions.IsAuthenticated',\n    ),\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',\n    'PAGE_SIZE': 50,\n    'DEFAULT_FILTER_BACKENDS': [",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(hours=24),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),\n    'ROTATE_REFRESH_TOKENS': True,\n    'BLACKLIST_AFTER_ROTATION': True,\n    'UPDATE_LAST_LOGIN': True,\n    'ALGORITHM': 'HS256',\n    'SIGNING_KEY': SECRET_KEY,\n    'VERIFYING_KEY': None,\n    'AUTH_HEADER_TYPES': ('Bearer',),",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', cast=Csv())\nCORS_ALLOW_CREDENTIALS = True\n# Swagger Settings\nSWAGGER_SETTINGS = {\n    'SECURITY_DEFINITIONS': {\n        'Bearer': {\n            'type': 'apiKey',\n            'name': 'Authorization',\n            'in': 'header'\n        }",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_CREDENTIALS",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\n# Swagger Settings\nSWAGGER_SETTINGS = {\n    'SECURITY_DEFINITIONS': {\n        'Bearer': {\n            'type': 'apiKey',\n            'name': 'Authorization',\n            'in': 'header'\n        }\n    },",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SWAGGER_SETTINGS",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.settings",
+        "description": "bbs_edumanager_api.settings",
+        "peekOfCode": "SWAGGER_SETTINGS = {\n    'SECURITY_DEFINITIONS': {\n        'Bearer': {\n            'type': 'apiKey',\n            'name': 'Authorization',\n            'in': 'header'\n        }\n    },\n    'USE_SESSION_AUTH': False,\n    'JSON_EDITOR': True,",
+        "detail": "bbs_edumanager_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.urls",
+        "description": "bbs_edumanager_api.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "detail": "bbs_edumanager_api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "bbs_edumanager_api.wsgi",
+        "description": "bbs_edumanager_api.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "bbs_edumanager_api.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "kind": 6,
+        "importPath": "users.admin",
+        "description": "users.admin",
+        "peekOfCode": "class UserAdmin(BaseUserAdmin):\n    list_display = ['email', 'first_name', 'last_name', 'role', 'is_active', 'date_joined']\n    list_filter = ['role', 'is_active', 'is_staff', 'date_joined']\n    search_fields = ['email', 'first_name', 'last_name']\n    ordering = ['-date_joined']\n    fieldsets = (\n        (None, {'fields': ('email', 'password')}),\n        ('Informations Personnelles', {'fields': ('first_name', 'last_name', 'role')}),\n        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),\n        ('Dates importantes', {'fields': ('last_login', 'date_joined')}),",
+        "detail": "users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UsersConfig",
+        "kind": 6,
+        "importPath": "users.apps",
+        "description": "users.apps",
+        "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'users'\n    verbose_name = 'Gestion des Utilisateurs'",
+        "detail": "users.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "users.models",
+        "description": "users.models",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    def create_user(self, email, password=None, **extra_fields):\n        if not email:\n            raise ValueError(\"Email obligatoire\")\n        email = self.normalize_email(email)\n        user = self.model(email=email, **extra_fields)\n        user.set_password(password)\n        user.save(using=self._db)\n        return user\n    def create_superuser(self, email, password=None, **extra_fields):",
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "users.models",
+        "description": "users.models",
+        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    ROLE_CHOICES = [\n        ('ADMIN', 'Administrateur'),\n        ('SCOLARITE', 'Service Scolarite'),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    email = models.EmailField(unique=True, verbose_name=\"Email\")\n    first_name = models.CharField(max_length=150, verbose_name=\"Prenom\")\n    last_name = models.CharField(max_length=150, verbose_name=\"Nom\")\n    role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='SCOLARITE', verbose_name='Role')",
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserListSerializer",
+        "kind": 6,
+        "importPath": "users.serializers",
+        "description": "users.serializers",
+        "peekOfCode": "class UserListSerializer(serializers.ModelSerializer):\n    full_name = serializers.CharField(source='get_full_name', read_only=True)\n    class Meta:\n        model = User\n        fields = [\n            'id', 'email', 'first_name', 'last_name', 'full_name',\n            'role', 'is_active', 'date_joined', 'last_login'\n        ]\n        read_only_fields = ['id', 'date_joined', 'last_login']\nclass UserDetailSerializer(serializers.ModelSerializer):",
+        "detail": "users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserDetailSerializer",
+        "kind": 6,
+        "importPath": "users.serializers",
+        "description": "users.serializers",
+        "peekOfCode": "class UserDetailSerializer(serializers.ModelSerializer):\n    full_name = serializers.CharField(source='get_full_name', read_only=True)\n    class Meta:\n        model = User\n        fields = [\n            'id', 'email', 'first_name', 'last_name', 'full_name',\n            'role', 'is_active', 'is_staff', 'date_joined', 'last_login'\n        ]\n        read_only_fields = ['id', 'date_joined', 'last_login']\nclass UserCreateSerializer(serializers.ModelSerializer):",
+        "detail": "users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreateSerializer",
+        "kind": 6,
+        "importPath": "users.serializers",
+        "description": "users.serializers",
+        "peekOfCode": "class UserCreateSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(\n        write_only=True,\n        required=True,\n        validators=[validate_password]\n    )\n    class Meta:\n        model = User\n        fields = ['email', 'password', 'first_name', 'last_name', 'role']\n    def create(self, validated_data):",
+        "detail": "users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSerializer",
+        "kind": 6,
+        "importPath": "users.serializers",
+        "description": "users.serializers",
+        "peekOfCode": "class UserUpdateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['email', 'first_name', 'last_name', 'role', 'is_active']\n    def validate_email(self, value):\n        \"\"\"Vérifier que l'email n'est pas déjà utilisé par un autre utilisateur\"\"\"\n        user = self.instance\n        if User.objects.exclude(pk=user.pk).filter(email=value).exists():\n            raise serializers.ValidationError(\"Cet email est déjà utilisé\")\n        return value",
+        "detail": "users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "users.serializers",
+        "description": "users.serializers",
+        "peekOfCode": "User = get_user_model()\nclass UserListSerializer(serializers.ModelSerializer):\n    full_name = serializers.CharField(source='get_full_name', read_only=True)\n    class Meta:\n        model = User\n        fields = [\n            'id', 'email', 'first_name', 'last_name', 'full_name',\n            'role', 'is_active', 'date_joined', 'last_login'\n        ]\n        read_only_fields = ['id', 'date_joined', 'last_login']",
+        "detail": "users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bbs_edumanager_api.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     #Applis locals
     'authentication',
     'users',
+    'academic',
     
 ]
 

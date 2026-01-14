@@ -1,1 +1,6 @@
 .env
+*.log
+*.pot
+static/
+staticfiles/
+__pycache__/

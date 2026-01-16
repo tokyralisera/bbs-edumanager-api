@@ -4,8 +4,6 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid
 
 class AnneeUniversitaire(models.Model):
-    """Modèle pour l'année universitaire"""
-    
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     date_debut = models.DateField(verbose_name="Date de début")
     date_fin = models.DateField(verbose_name="Date de fin")
@@ -46,9 +44,7 @@ class AnneeUniversitaire(models.Model):
         return cls.objects.filter(is_active=True).first()
 
 
-class Vague(models.Model):
-    """Modèle pour les vagues d'inscription"""
-    
+class Vague(models.Model):   
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     nom = models.CharField(max_length=100, verbose_name="Nom de la vague")
     annee_universitaire = models.ForeignKey(
@@ -76,3 +72,37 @@ class Vague(models.Model):
     
     def __str__(self):
         return f"{self.nom} - {self.annee_universitaire.libelle}"
+
+class Filiere(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    libelle = models.CharField(max_length=200, unique=True, verbose_name="Libellé")
+    code = models.CharField(max_length=20, unique=True, verbose_name="Code")
+    
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Date de création")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Dernière modification")
+    
+    class Meta:
+        db_table = 'filieres'
+        verbose_name = 'Filière'
+        verbose_name_plural = 'Filières'
+        ordering = ['libelle']
+    
+    def __str__(self):
+        return f"{self.code} - {self.libelle}"
+
+
+class Niveau(models.Model):   
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    libelle = models.CharField(max_length=100, unique=True, verbose_name="Libellé")
+    
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Date de création")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Dernière modification")
+    
+    class Meta:
+        db_table = 'niveaux'
+        verbose_name = 'Niveau'
+        verbose_name_plural = 'Niveaux'
+        ordering = ['libelle']
+    
+    def __str__(self):
+        return self.libelle

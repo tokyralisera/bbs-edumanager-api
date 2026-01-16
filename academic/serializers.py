@@ -1,7 +1,5 @@
 from rest_framework import serializers
-from .models import AnneeUniversitaire, Vague
-from datetime import datetime
-
+from .models import AnneeUniversitaire, Vague, Filiere, Niveau
 
 class VagueListSerializer(serializers.ModelSerializer):
     annee_universitaire_libelle = serializers.CharField(source='annee_universitaire.libelle', read_only=True)
@@ -99,7 +97,7 @@ class VagueSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'created_at', 'updated_at', 'annee_universitaire_libelle']
         
     def validate(self, data):
-        """Valider que le nom de la vague est unique pour cette année universitaire"""
+        #? Valider que le nom de la vague est unique pour cette année universitaire
         nom = data.get('nom', '').strip()
         annee_universitaire = data.get('annee_universitaire')
         
@@ -125,16 +123,84 @@ class VagueSerializer(serializers.ModelSerializer):
         return data
 
 class VagueCreateSerializer(serializers.ModelSerializer):
-    """Serializer pour créer une vague"""
-    
     class Meta:
         model = Vague
         fields = ['nom', 'annee_universitaire']
     
     def validate_annee_universitaire(self, value):
-        """Vérifier que l'année universitaire existe"""
+        #? Vérifier que l'année universitaire existe"""
         if not value:
             raise serializers.ValidationError(
                 "L'année universitaire est obligatoire"
             )
         return value
+    
+class FiliereSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Filiere
+        fields = [
+            'id',
+            'libelle',
+            'code',
+            'created_at',
+            'updated_at'
+        ]
+        read_only_fields = ['id', 'created_at', 'updated_at']
+        
+    def validate_code(self, value):
+        value = value.strip().upper()
+        if len(value) < 2 :
+            raise serializers.ValidationError('Le code doit contenir au moins 2 caracteres')
+        if len(value)> 10:
+            raise serializers.ValidationError('Le code ne doit pas depasser 10 caracteres')
+        
+        existing = Filiere.objects.filter(code__iexact=value)
+
+        if self.instance:
+            existing = existing.exclude(pk=self.instance.pk)
+            
+        if existing.exists():
+            raise serializers.ValidationError('Une Filiere avec ce libelle existe deja')
+    
+        return value
+    
+class FiliereListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Filiere
+        fields = ['id', 'code', 'libelle']
+
+class NiveauSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Niveau
+        fields = [
+            'id',
+            'libelle',
+            'created_at',
+            'updated_at'
+        ]
+        read_only_fields = ['id', 'created_at', 'updated_at']
+    
+    def validate_libelle(self, value):
+        value = value.strip()
+        
+        if len(value) < 2:
+            raise serializers.ValidationError(
+                'Le libellé doit contenir au moins 2 caractères'
+            )
+        
+        existing = Niveau.objects.filter(libelle__iexact=value)
+        
+        if self.instance:
+            existing = existing.exclude(pk=self.instance.pk)
+        
+        if existing.exists():
+            raise serializers.ValidationError(
+                'Un niveau avec ce libellé existe déjà'
+            )
+        
+        return value
+
+class NiveauListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Niveau
+        fields = ['id', 'libelle']

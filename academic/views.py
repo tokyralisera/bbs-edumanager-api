@@ -5,13 +5,17 @@ from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
 from authentication.permissions import IsAdminOrScolarite
-from .models import AnneeUniversitaire, Vague
+from .models import AnneeUniversitaire, Vague, Filiere, Niveau
 from .serializers import (
     AnneeUniversitaireSerializer,
     AnneeUniversitaireCreateSerializer,
     VagueSerializer,
     VagueListSerializer,
-    VagueCreateSerializer
+    VagueCreateSerializer,
+    FiliereSerializer,
+    FiliereListSerializer,
+    NiveauSerializer,
+    NiveauListSerializer
 )
 
 
@@ -75,15 +79,35 @@ class AnneeUniversitaireViewSet(viewsets.ModelViewSet):
     def deactivate(self, request, pk=None):
         #? Désactiver une année universitaire
         annee = self.get_object()
-        annee.is_active = False
-        annee.save()
         
-        serializer = AnneeUniversitaireSerializer(annee)
+        if annee.is_active:
+            annee.is_active = False
+            annee.save()
+        
+            serializer = AnneeUniversitaireSerializer(annee)
+            return Response({
+                'message': 'Année universitaire désactivée avec succès',
+                'data': serializer.data
+            }, status=status.HTTP_200_OK)
+        else:
+            return Response({
+                'message': "Cette année universitaire n'est pas active"
+            }, status=status.HTTP_400_BAD_REQUEST)
+    
+    @action(detail=True, methods=['get'])
+    def vagues(self, request, pk=None):
+        """Obtenir toutes les vagues d'une année universitaire"""
+        annee = self.get_object()
+        vagues = annee.vagues.all()
+        
+        from .serializers import VagueListSerializer
+        serializer = VagueListSerializer(vagues, many=True)
+        
         return Response({
-            'message': 'Année universitaire désactivée avec succès',
-            'data': serializer.data
+            'annee_universitaire': annee.libelle,
+            'total_vagues': vagues.count(),
+            'vagues': serializer.data
         }, status=status.HTTP_200_OK)
-
 
 class VagueViewSet(viewsets.ModelViewSet):
     
@@ -151,13 +175,132 @@ class VagueViewSet(viewsets.ModelViewSet):
         instance = self.get_object()
         
         #! Vérifier qu'aucune inscription n'utilise cette vague
-        if instance.inscriptions.exists():
-             return Response({
-                'error': 'Impossible de supprimer cette vague car elle est utilisée'
-            }, status=status.HTTP_400_BAD_REQUEST)
+        # if instance.inscriptions.exists():
+        #      return Response({
+        #         'error': 'Impossible de supprimer cette vague car elle est utilisée'
+        #     }, status=status.HTTP_400_BAD_REQUEST)
         
         self.perform_destroy(instance)
         
         return Response({
             'message': 'Vague supprimée avec succès'
+        }, status=status.HTTP_200_OK)
+        
+class FiliereViewSet(viewsets.ModelViewSet):
+    queryset = Filiere.objects.all()
+    permission_classes = [IsAuthenticated, IsAdminOrScolarite]
+    
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return FiliereListSerializer
+        return FiliereSerializer
+    
+    def get_queryset(self):
+        queryset = Filiere.objects.all()
+        
+        #? Recherche par libellé ou code
+        search = self.request.query_params.get('search', None)
+        if search:
+            queryset = queryset.filter(
+                Q(libelle__icontains=search) | Q(code__icontains=search)
+            )
+        
+        #? Filtrer par code 
+        code = self.request.query_params.get('code', None)
+        if code:
+            queryset = queryset.filter(code__iexact=code)
+        
+        return queryset.order_by('code')
+    
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        
+        return Response({
+            'message': 'Filière créée avec succès',
+            'data': serializer.data
+        }, status=status.HTTP_201_CREATED)
+    
+    def update(self, request, *args, **kwargs):
+        partial = kwargs.pop('partial', False)
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        
+        return Response({
+            'message': 'Filière mise à jour avec succès',
+            'data': serializer.data
+        }, status=status.HTTP_200_OK)
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        
+        # TODO: Vérifier qu'aucune inscription n'utilise cette filière
+        # if instance.inscriptions.exists():
+        #     return Response({
+        #         'error': 'Impossible de supprimer cette filière car elle est utilisée dans des inscriptions'
+        #     }, status=status.HTTP_400_BAD_REQUEST)
+        
+        self.perform_destroy(instance)
+        
+        return Response({
+            'message': 'Filière supprimée avec succès'
+        }, status=status.HTTP_200_OK)
+
+class NiveauViewSet(viewsets.ModelViewSet):
+    queryset = Niveau.objects.all()
+    permission_classes = [IsAuthenticated, IsAdminOrScolarite]
+    
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return NiveauListSerializer
+        return NiveauSerializer
+    
+    def get_queryset(self):
+        queryset = Niveau.objects.all()
+        
+        #? Recherche par libellé
+        search = self.request.query_params.get('search', None)
+        if search:
+            queryset = queryset.filter(libelle__icontains=search)
+        
+        return queryset.order_by('libelle')
+    
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        
+        return Response({
+            'message': 'Niveau créé avec succès',
+            'data': serializer.data
+        }, status=status.HTTP_201_CREATED)
+    
+    def update(self, request, *args, **kwargs):
+        partial = kwargs.pop('partial', False)
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        
+        return Response({
+            'message': 'Niveau mis à jour avec succès',
+            'data': serializer.data
+        }, status=status.HTTP_200_OK)
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        
+        # TODO: Vérifier qu'aucune inscription n'utilise ce niveau
+        # if instance.inscriptions.exists():
+        #     return Response({
+        #         'error': 'Impossible de supprimer ce niveau car il est utilisé dans des inscriptions'
+        #     }, status=status.HTTP_400_BAD_REQUEST)
+        
+        self.perform_destroy(instance)
+        
+        return Response({
+            'message': 'Niveau supprimé avec succès'
         }, status=status.HTTP_200_OK)

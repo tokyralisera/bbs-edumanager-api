@@ -1,10 +1,8 @@
 from django.contrib import admin
-from .models import AnneeUniversitaire, Vague
+from .models import AnneeUniversitaire, Vague, Filiere, Niveau
 
 @admin.register(AnneeUniversitaire)
 class AnneeUniversitaireAdmin(admin.ModelAdmin):
-    """Configuration de l'interface admin pour AnneeUniversitaire"""
-    
     list_display = ['libelle', 'date_debut', 'date_fin', 'is_active', 'created_at']
     list_filter = ['is_active', 'date_debut']
     search_fields = ['date_debut', 'date_fin']
@@ -28,8 +26,6 @@ class AnneeUniversitaireAdmin(admin.ModelAdmin):
 
 @admin.register(Vague)
 class VagueAdmin(admin.ModelAdmin):
-    """Configuration de l'interface admin pour Vague"""
-    
     list_display = ['nom', 'annee_universitaire', 'created_at']
     list_filter = ['annee_universitaire']
     search_fields = ['nom']
@@ -38,6 +34,43 @@ class VagueAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {
             'fields': ('nom', 'annee_universitaire')
+        }),
+    )
+    
+    readonly_fields = ['created_at', 'updated_at']
+    
+@admin.register(Filiere)
+class FiliereAdmin(admin.ModelAdmin):
+    list_display = ['code', 'libelle', 'created_at', 'updated_at']
+    search_fields = ['libelle', 'code']
+    ordering = ['code']
+    
+    fieldsets = (
+        ('Informations de la filière', {
+            'fields': ('code', 'libelle')
+        }),
+        ('Métadonnées', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+    
+    readonly_fields = ['created_at', 'updated_at']
+
+
+@admin.register(Niveau)
+class NiveauAdmin(admin.ModelAdmin):
+    list_display = ['libelle', 'created_at', 'updated_at']
+    search_fields = ['libelle']
+    ordering = ['libelle']
+    
+    fieldsets = (
+        ('Informations du niveau', {
+            'fields': ('libelle',)
+        }),
+        ('Métadonnées', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
         }),
     )
     
